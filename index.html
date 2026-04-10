@@ -104,32 +104,65 @@ layout: null
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- OPTION 1: Split hero — text left, full-color logo right -->
   <section class="hero-gradient relative overflow-hidden">
     <div class="absolute inset-0 overflow-hidden">
       <div class="absolute top-20 left-10 w-72 h-72 bg-brand-400 rounded-full blur-3xl opacity-10"></div>
       <div class="absolute bottom-10 right-10 w-96 h-96 bg-accent-500 rounded-full blur-3xl opacity-10"></div>
       <div class="absolute top-1/2 left-1/3 w-[500px] h-[500px] bg-brand-500 rounded-full blur-3xl opacity-5"></div>
     </div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
-      <div class="text-center max-w-3xl mx-auto">
-        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/10 text-blue-200 ring-1 ring-white/20 mb-6">
-          Oil Well Testing Platform
-        </span>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
-          Smart Pump Testing &amp; Data Management
-        </h1>
-        <p class="mt-6 text-lg sm:text-xl text-blue-100/90 max-w-2xl mx-auto leading-relaxed">
-          Streamline your oil well pump testing operations with real-time monitoring, powerful analytics, and comprehensive data management — all in one platform.
-        </p>
-        <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-          <a href="{{ site.app_url }}/register" class="inline-flex items-center justify-center px-8 py-3.5 rounded-lg text-base font-semibold text-brand-900 bg-white hover:bg-gray-50 shadow-lg shadow-brand-950/20 transition">
-            Get Started Free
-          </a>
-          <a href="{{ site.app_url }}/login" class="inline-flex items-center justify-center px-8 py-3.5 rounded-lg text-base font-semibold text-white border-2 border-white/25 hover:bg-white/10 transition">
-            Sign In
-            <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </a>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div class="flex-1 text-center lg:text-left">
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/10 text-blue-200 ring-1 ring-white/20 mb-6">
+            Oil Well Testing Platform
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
+            Smart Pump Testing &amp; Data Management
+          </h1>
+          <p class="mt-6 text-lg sm:text-xl text-blue-100/90 max-w-2xl leading-relaxed">
+            Streamline your oil well pump testing operations with real-time monitoring, powerful analytics, and comprehensive data management — all in one platform.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+            <a href="{{ site.app_url }}/register" class="inline-flex items-center justify-center px-8 py-3.5 rounded-lg text-base font-semibold text-brand-900 bg-white hover:bg-gray-50 shadow-lg shadow-brand-950/20 transition">
+              Get Started Free
+            </a>
+            <a href="{{ site.app_url }}/login" class="inline-flex items-center justify-center px-8 py-3.5 rounded-lg text-base font-semibold text-white border-2 border-white/25 hover:bg-white/10 transition">
+              Sign In
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center lg:justify-end">
+          <div class="relative">
+            <div class="absolute inset-0 bg-brand-400/20 rounded-full blur-3xl scale-125"></div>
+            <svg class="relative w-60 h-60 sm:w-72 sm:h-72 lg:w-[22rem] lg:h-[22rem] drop-shadow-2xl" viewBox="5 5 125 110" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="heroOil" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a4480"/><stop offset="100%" stop-color="#2563eb"/></linearGradient>
+                <linearGradient id="heroDigi" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#10b981"/></linearGradient>
+              </defs>
+              <circle cx="60" cy="60" r="45" fill="url(#heroOil)" stroke="#fff" stroke-width="2.5"/>
+              <g transform="translate(60,60)">
+                <polygon points="-8,-35 8,-35 6,25 -6,25" fill="#fff" opacity="0.9"/>
+                <line x1="-6" y1="-25" x2="6" y2="-15" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+                <line x1="6" y1="-25" x2="-6" y2="-15" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+                <line x1="-6" y1="-5" x2="6" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+                <line x1="6" y1="-5" x2="-6" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+                <rect x="-10" y="-38" width="20" height="6" fill="#fff" rx="1"/>
+                <rect x="-12" y="25" width="24" height="8" fill="#fff" rx="2"/>
+              </g>
+              <rect x="100" y="35" width="18" height="28" fill="url(#heroDigi)" rx="3" stroke="#fff" stroke-width="1"/>
+              <rect x="102" y="38" width="14" height="18" fill="#fff" rx="1"/>
+              <rect x="104" y="50" width="2" height="4" fill="url(#heroDigi)"/>
+              <rect x="107" y="48" width="2" height="6" fill="url(#heroDigi)"/>
+              <rect x="110" y="46" width="2" height="8" fill="url(#heroDigi)"/>
+              <rect x="113" y="49" width="2" height="5" fill="url(#heroDigi)"/>
+              <path d="M 78 50 Q 85 45 95 50" stroke="url(#heroDigi)" stroke-width="2.5" fill="none" opacity="0.8"/>
+              <path d="M 82 60 Q 89 55 99 60" stroke="url(#heroDigi)" stroke-width="2.5" fill="none" opacity="0.8"/>
+              <path d="M 78 70 Q 85 75 95 70" stroke="url(#heroDigi)" stroke-width="2.5" fill="none" opacity="0.8"/>
+              <circle cx="25" cy="25" r="2.5" fill="url(#heroDigi)" opacity="0.6"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -143,82 +176,69 @@ layout: null
         <p class="mt-4 text-lg text-gray-600">Everything you need to manage pump testing operations efficiently and accurately.</p>
       </div>
       <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-        <!-- Real-Time Monitoring -->
         <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition group">
           <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center group-hover:bg-brand-100 transition">
-            <svg class="h-6 w-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
-            </svg>
+            <svg class="h-6 w-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
           </div>
           <h3 class="mt-4 text-lg font-semibold text-gray-900">Real-Time Monitoring</h3>
           <p class="mt-2 text-sm text-gray-600 leading-relaxed">Track pump test data as it happens with live dashboards and instant notifications.</p>
         </div>
-
-        <!-- Data Analytics -->
         <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition group">
           <div class="w-12 h-12 bg-accent-50 rounded-lg flex items-center justify-center group-hover:bg-accent-100 transition">
-            <svg class="h-6 w-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
-            </svg>
+            <svg class="h-6 w-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
           </div>
           <h3 class="mt-4 text-lg font-semibold text-gray-900">Data Analytics</h3>
           <p class="mt-2 text-sm text-gray-600 leading-relaxed">Transform raw test data into actionable insights with powerful visualization and analysis tools.</p>
         </div>
-
-        <!-- Reporting -->
         <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition group">
           <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center group-hover:bg-brand-100 transition">
-            <svg class="h-6 w-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
-            </svg>
+            <svg class="h-6 w-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
           </div>
           <h3 class="mt-4 text-lg font-semibold text-gray-900">Comprehensive Reporting</h3>
           <p class="mt-2 text-sm text-gray-600 leading-relaxed">Generate detailed reports and export data in multiple formats for compliance and review.</p>
         </div>
-
-        <!-- Multi-Well -->
         <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition group">
           <div class="w-12 h-12 bg-accent-50 rounded-lg flex items-center justify-center group-hover:bg-accent-100 transition">
-            <svg class="h-6 w-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"/>
-            </svg>
+            <svg class="h-6 w-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"/></svg>
           </div>
           <h3 class="mt-4 text-lg font-semibold text-gray-900">Multi-Well Management</h3>
           <p class="mt-2 text-sm text-gray-600 leading-relaxed">Manage testing operations across multiple wells from a single unified dashboard.</p>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- How It Works -->
-  <section id="how-it-works" class="bg-white py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="how-it-works" class="bg-white py-20 sm:py-28 relative overflow-hidden">
+    <div class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/3 opacity-[0.03] pointer-events-none">
+      <svg class="w-[500px] h-[500px]" viewBox="5 5 125 110" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="45" fill="url(#hwOil)" stroke="#1a4480" stroke-width="2"/>
+        <defs><linearGradient id="hwOil" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a4480"/><stop offset="100%" stop-color="#2563eb"/></linearGradient></defs>
+        <g transform="translate(60,60)"><polygon points="-8,-35 8,-35 6,25 -6,25" fill="#1a4480" opacity="0.9"/><line x1="-6" y1="-25" x2="6" y2="-15" stroke="#1a4480" stroke-width="1.5" opacity="0.7"/><line x1="6" y1="-25" x2="-6" y2="-15" stroke="#1a4480" stroke-width="1.5" opacity="0.7"/><line x1="-6" y1="-5" x2="6" y2="5" stroke="#1a4480" stroke-width="1.5" opacity="0.7"/><line x1="6" y1="-5" x2="-6" y2="5" stroke="#1a4480" stroke-width="1.5" opacity="0.7"/><rect x="-10" y="-38" width="20" height="6" fill="#1a4480" rx="1"/><rect x="-12" y="25" width="24" height="8" fill="#1a4480" rx="2"/></g>
+        <path d="M 78 50 Q 85 45 95 50" stroke="#059669" stroke-width="2.5" fill="none"/><path d="M 82 60 Q 89 55 99 60" stroke="#059669" stroke-width="2.5" fill="none"/><path d="M 78 70 Q 85 75 95 70" stroke="#059669" stroke-width="2.5" fill="none"/>
+      </svg>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">How It Works</h2>
         <p class="mt-4 text-lg text-gray-600">Get up and running in three simple steps.</p>
       </div>
       <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
-
         <div class="text-center">
           <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-600 text-white text-2xl font-bold shadow-lg shadow-brand-600/30">1</div>
           <h3 class="mt-6 text-xl font-semibold text-gray-900">Set Up Your Wells</h3>
           <p class="mt-3 text-gray-600 leading-relaxed">Create well profiles, configure testing parameters, and organize your operations.</p>
         </div>
-
         <div class="text-center">
           <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-600 text-white text-2xl font-bold shadow-lg shadow-brand-600/30">2</div>
           <h3 class="mt-6 text-xl font-semibold text-gray-900">Run &amp; Monitor Tests</h3>
           <p class="mt-3 text-gray-600 leading-relaxed">Execute pump tests with real-time data capture, live monitoring, and instant alerts.</p>
         </div>
-
         <div class="text-center">
           <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-600 text-white text-2xl font-bold shadow-lg shadow-brand-600/30">3</div>
           <h3 class="mt-6 text-xl font-semibold text-gray-900">Analyze &amp; Report</h3>
           <p class="mt-3 text-gray-600 leading-relaxed">Review results with powerful analytics, generate reports, and make data-driven decisions.</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -228,6 +248,14 @@ layout: null
     <div class="absolute inset-0">
       <div class="absolute -top-20 -right-20 w-80 h-80 bg-white rounded-full blur-3xl opacity-10"></div>
       <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-white rounded-full blur-3xl opacity-10"></div>
+    </div>
+    <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 opacity-[0.07] pointer-events-none">
+      <svg class="w-72 h-72 sm:w-96 sm:h-96" viewBox="5 5 125 110" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="45" fill="none" stroke="#fff" stroke-width="2.5"/>
+        <g transform="translate(60,60)"><polygon points="-8,-35 8,-35 6,25 -6,25" fill="#fff" opacity="0.9"/><line x1="-6" y1="-25" x2="6" y2="-15" stroke="#fff" stroke-width="1.5" opacity="0.7"/><line x1="6" y1="-25" x2="-6" y2="-15" stroke="#fff" stroke-width="1.5" opacity="0.7"/><line x1="-6" y1="-5" x2="6" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.7"/><line x1="6" y1="-5" x2="-6" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.7"/><rect x="-10" y="-38" width="20" height="6" fill="#fff" rx="1"/><rect x="-12" y="25" width="24" height="8" fill="#fff" rx="2"/></g>
+        <rect x="100" y="35" width="18" height="28" fill="none" stroke="#fff" stroke-width="1.5" rx="3"/><rect x="102" y="38" width="14" height="18" fill="#fff" rx="1"/>
+        <path d="M 78 50 Q 85 45 95 50" stroke="#fff" stroke-width="2.5" fill="none"/><path d="M 82 60 Q 89 55 99 60" stroke="#fff" stroke-width="2.5" fill="none"/><path d="M 78 70 Q 85 75 95 70" stroke="#fff" stroke-width="2.5" fill="none"/>
+      </svg>
     </div>
     <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 text-center">
       <h2 class="text-3xl sm:text-4xl font-bold text-white">Ready to modernize your pump testing?</h2>

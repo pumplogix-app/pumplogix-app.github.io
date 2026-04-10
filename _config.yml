@@ -7,7 +7,6 @@ baseurl: ""
 app_url: "https://pump-logix-app.fly.dev"
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
